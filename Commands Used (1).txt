@@ -1,0 +1,54 @@
+
+# Redis
+
+# Workload A
+python2 ./bin/ycsb load redis -s -P workloads/workloada -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=6379" > outputLoadRedisA.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloada -p "redis.host=127.0.0.1" -p "redis.port=6379" > outputRunRedisA.txt
+
+# Workload B
+python2 ./bin/ycsb load redis -s -P workloads/workloadb -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p redis.host=127.0.0.1 -p redis.port=6379 > outputLoadRedisB.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadb -p redis.host=127.0.0.1 -p redis.port=6379 > outputRunRedisB.txt
+
+# Workload C
+python2 ./bin/ycsb load redis -s -P workloads/workloadc -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p redis.host=127.0.0.1 -p redis.port=6379 > outputLoadRedisC.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadc -p redis.host=127.0.0.1 -p redis.port=6379 > outputRunRedisC.txt
+
+# Workload D
+python2 ./bin/ycsb load redis -s -P workloads/workloadd -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p redis.host=127.0.0.1 -p redis.port=6379 > outputLoadRedisD.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadd -p redis.host=127.0.0.1 -p redis.port=6379 > outputRunRedisD.txt
+
+# Workload E
+python2 ./bin/ycsb load redis -s -P workloads/workloade -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p redis.host=127.0.0.1 -p redis.port=6379 > outputLoadRedisE.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloade -p redis.host=127.0.0.1 -p redis.port=6379 > outputRunRedisE.txt
+
+# Workload F
+python2 ./bin/ycsb load redis -s -P workloads/workloadf -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p redis.host=127.0.0.1 -p redis.port=6379 > outputLoadRedisF.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadf -p redis.host=127.0.0.1 -p redis.port=6379 > outputRunRedisF.txt
+
+
+# SSDB
+
+# Workload A
+python2 ./bin/ycsb load redis -s -P workloads/workloada -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputLoadSSDBA.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloada -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputRunSSDBA.txt
+
+# Workload B
+python2 ./bin/ycsb load redis -s -P workloads/workloadb -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputLoadSSDBB.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadb -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputRunSSDBB.txt
+
+# Workload C
+python2 ./bin/ycsb load redis -s -P workloads/workloadc -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputLoadSSDBC.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadc -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputRunSSDBC.txt
+
+# Workload D
+python2 ./bin/ycsb load redis -s -P workloads/workloadd -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputLoadSSDBD.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadd -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputRunSSDBD.txt
+
+# Workload E
+python2 ./bin/ycsb load redis -s -P workloads/workloade -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputLoadSSDBE.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloade -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputRunSSDBE.txt
+
+# Workload F
+python2 ./bin/ycsb load redis -s -P workloads/workloadf -p recordcount=100000 -p operationcount=100000 -p fieldcount=10 -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputLoadSSDBF.txt
+python2 ./bin/ycsb run redis -s -P workloads/workloadf -p "redis.host=127.0.0.1" -p "redis.port=8888" > outputRunSSDBF.txt
+
